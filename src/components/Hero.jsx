@@ -1,0 +1,248 @@
+import { motion } from "framer-motion";
+
+
+export default function Hero() {
+  return (
+
+    <section
+      id="home"
+      className="
+      min-h-screen
+      bg-[#F5F1EA]
+      flex
+      items-center
+      "
+    >
+
+
+      <div className="
+      max-w-7xl
+      mx-auto
+      px-8
+      w-full
+      grid
+      md:grid-cols-2
+      items-center
+      gap-10
+      ">
+
+
+
+        {/* LEFT CONTENT */}
+
+
+        <div>
+
+
+        <motion.h1
+
+          initial={{ opacity: 0, y: 60 }}
+
+          animate={{ opacity: 1, y: 0 }}
+
+          transition={{ duration: 0.8 }}
+
+          className="
+          text-7xl
+          md:text-[8rem]
+          font-black
+          tracking-[-6px]
+          leading-none
+          "
+
+        >
+
+          PRABHAT
+
+        </motion.h1>
+
+
+
+
+        <motion.h1
+
+          initial={{ opacity: 0, y: 80 }}
+
+          animate={{ opacity: 1, y: 0 }}
+
+          transition={{ delay: 0.2 }}
+
+          className="
+          text-5xl
+          md:text-[6rem]
+          font-black
+          tracking-[-4px]
+          text-gray-400
+          leading-none
+          "
+
+        >
+
+          KUMAR CHAURASIA
+
+        </motion.h1>
+
+
+
+
+
+        <p className="
+        mt-10
+        text-xl
+        text-gray-700
+        "
+        >
+
+          Software Developer • DevOps Engineer
+
+        </p>
+
+
+
+
+
+        <p className="
+        mt-4
+        max-w-2xl
+        text-lg
+        text-gray-500
+        "
+        >
+
+          Building scalable applications and automating deployments with modern technologies.
+
+        </p>
+
+
+
+
+
+
+
+        <div className="
+        mt-10
+        flex
+        gap-4
+        ">
+
+
+          <a
+
+            href="#projects"
+
+            className="
+            px-6
+            py-3
+            bg-black
+            text-white
+            rounded-full
+            hover:scale-105
+            transition
+            "
+
+          >
+
+            View Projects
+
+          </a>
+
+
+
+
+
+          <a
+
+            href="/resume.pdf"
+
+            target="_blank"
+
+            className="
+            px-6
+            py-3
+            border
+            border-black
+            rounded-full
+            hover:bg-black
+            hover:text-white
+            transition
+            "
+
+          >
+
+            Resume
+
+          </a>
+
+
+
+        </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        {/* RIGHT PHOTO */}
+
+
+        <motion.div
+
+        initial={{
+          opacity:0,
+          scale:0.8
+        }}
+
+        animate={{
+          opacity:1,
+          scale:1
+        }}
+
+        transition={{
+          duration:0.8
+        }}
+
+        className="
+        flex
+        justify-center
+        "
+
+        >
+
+
+          <img
+
+          src="/profile.png"
+
+          alt="Prabhat"
+
+          className="
+          w-72
+          h-72
+          md:w-[420px]
+          md:h-[420px]
+          object-cover
+          rounded-3xl
+          shadow-2xl
+          "
+
+          />
+
+
+        </motion.div>
+
+
+
+
+
+      </div>
+
+
+
+    </section>
+
+  );
+}
