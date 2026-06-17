@@ -11,13 +11,17 @@ import {
   FaNetworkWired,
   FaCode,
   FaLaptopCode,
-  FaServer
+  FaServer,
+  FaLinux,
+  FaDocker,
+  FaAws
 } from "react-icons/fa";
 
 
 import {
   SiTailwindcss,
-  SiMysql
+  SiMysql,
+  SiGithubactions
 } from "react-icons/si";
 
 
@@ -48,6 +52,7 @@ icon:<FaJs/>
 ]
 
 },
+
 
 
 
@@ -89,6 +94,8 @@ icon:<SiTailwindcss/>
 
 
 
+
+
 {
 title:"🗄️ Database",
 
@@ -107,6 +114,7 @@ icon:<FaDatabase/>
 ]
 
 },
+
 
 
 
@@ -140,6 +148,7 @@ icon:<FaLaptopCode/>
 ]
 
 },
+
 
 
 
@@ -184,6 +193,7 @@ icon:<FaServer/>
 
 
 
+
 {
 title:"🛠️ Tools & Platforms",
 
@@ -216,11 +226,58 @@ icon:<FaJava/>
 
 ]
 
+},
+
+
+
+
+
+
+
+{
+title:"☁️ DevOps & Cloud(Learning)",
+
+skills:[
+
+
+{
+name:"Linux",
+icon:<FaLinux/>
+},
+
+
+{
+name:"Docker",
+icon:<FaDocker/>
+},
+
+
+{
+name:"CI/CD",
+icon:<SiGithubactions/>
+},
+
+
+{
+name:"AWS",
+icon:<FaAws/>
+},
+
+
+{
+name:"Cloud Basics",
+icon:<FaServer/>
+}
+
+
+]
+
 }
 
 
 
 ];
+
 
 
 
@@ -233,27 +290,39 @@ export default function Skills(){
 return(
 
 <section
+
 id="skills"
+
 className="
 py-40
 bg-[#F5F1EA]
 "
+
 >
 
 
-<div className="
+<div
+
+className="
 max-w-7xl
 mx-auto
 px-8
-">
+"
+
+>
 
 
-<p className="
+
+<p
+
+className="
 text-gray-400
 text-sm
 tracking-widest
 mb-4
-">
+"
+
+>
 
 SKILLS
 
@@ -262,18 +331,24 @@ SKILLS
 
 
 
+
+
 <h2
+
 className="
 text-4xl
 md:text-7xl
 font-bold
 mb-20
 "
+
 >
 
 Skills & Technologies
 
 </h2>
+
+
 
 
 
@@ -294,11 +369,13 @@ skillCategories.map((category)=>(
 
 
 <h3
+
 className="
 text-2xl
 font-bold
 mb-8
 "
+
 >
 
 {category.title}
@@ -309,14 +386,19 @@ mb-8
 
 
 
+
+
 <div
+
 className="
 grid
 grid-cols-2
 md:grid-cols-5
 gap-6
 "
+
 >
+
 
 
 {
@@ -328,7 +410,9 @@ category.skills.map((skill)=>(
 
 <div
 
+
 key={skill.name}
+
 
 className="
 bg-white
@@ -348,6 +432,8 @@ duration-500
 >
 
 
+
+
 <div className="text-4xl">
 
 {skill.icon}
@@ -355,29 +441,23 @@ duration-500
 </div>
 
 
-<p className="
+
+
+
+<p
+
+className="
 font-semibold
 text-center
-">
+"
+
+>
 
 {skill.name}
 
 </p>
 
 
-</div>
-
-
-
-))
-
-
-}
-
-
-
-
-</div>
 
 
 
@@ -392,11 +472,35 @@ text-center
 
 
 
+
+
 </div>
 
 
 
+
+
 </div>
+
+
+
+))
+
+
+}
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
 
 
 </section>
