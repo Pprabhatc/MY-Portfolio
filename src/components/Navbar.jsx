@@ -1,19 +1,37 @@
 export default function Navbar() {
   return (
-    <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-50">
+    <nav className="
+    fixed
+    top-5
+    left-1/2
+    -translate-x-1/2
+    z-50
+    w-max
+    ">
+
 
       <div className="
       backdrop-blur-md
       bg-white/60
       border
       border-gray-200
-      px-8
-      py-4
+      px-4
+      py-3
+      md:px-8
+      md:py-4
       rounded-full
       shadow-lg
       ">
 
-        <ul className="flex gap-8">
+
+        <ul className="
+        flex
+        gap-4
+        md:gap-8
+        text-sm
+        md:text-base
+        ">
+
 
 
           <li>
@@ -23,11 +41,13 @@ export default function Navbar() {
           </li>
 
 
+
           <li>
             <a href="#about">
               About
             </a>
           </li>
+
 
 
           <li>
@@ -37,11 +57,13 @@ export default function Navbar() {
           </li>
 
 
+
           <li>
             <a href="#projects">
               Projects
             </a>
           </li>
+
 
 
           <li>
@@ -51,10 +73,12 @@ export default function Navbar() {
           </li>
 
 
+
         </ul>
 
 
       </div>
+
 
     </nav>
   );

@@ -11,6 +11,8 @@ export default function Hero() {
       bg-[#F5F1EA]
       flex
       items-center
+      pt-28
+      pb-16
       "
     >
 
@@ -21,7 +23,7 @@ export default function Hero() {
       px-8
       w-full
       grid
-      md:grid-cols-2
+      xl:grid-cols-2
       items-center
       gap-10
       ">
@@ -31,7 +33,12 @@ export default function Hero() {
         {/* LEFT CONTENT */}
 
 
-        <div>
+        <div
+        className="
+        order-2
+        xl:order-1
+        "
+        >
 
 
         <motion.h1
@@ -55,6 +62,7 @@ export default function Hero() {
           PRABHAT
 
         </motion.h1>
+
 
 
 
@@ -86,6 +94,7 @@ export default function Hero() {
 
 
 
+
         <p className="
         mt-10
         text-xl
@@ -96,6 +105,7 @@ export default function Hero() {
           Software Developer • DevOps Engineer
 
         </p>
+
 
 
 
@@ -150,6 +160,7 @@ export default function Hero() {
 
 
 
+
           <a
 
             href="/resume.pdf"
@@ -175,11 +186,15 @@ export default function Hero() {
 
 
 
+
+        </div>
+
+
+
         </div>
 
 
 
-        </div>
 
 
 
@@ -189,16 +204,17 @@ export default function Hero() {
         {/* RIGHT PHOTO */}
 
 
+
         <motion.div
 
         initial={{
           opacity:0,
-          scale:0.8
+          y:20
         }}
 
         animate={{
           opacity:1,
-          scale:1
+          y:0
         }}
 
         transition={{
@@ -206,11 +222,14 @@ export default function Hero() {
         }}
 
         className="
+        order-1
+        xl:order-2
         flex
         justify-center
         "
 
         >
+
 
 
           <img
@@ -227,9 +246,11 @@ export default function Hero() {
           object-cover
           rounded-3xl
           shadow-2xl
+          block
           "
 
           />
+
 
 
         </motion.div>

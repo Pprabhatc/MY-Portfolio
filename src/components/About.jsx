@@ -7,7 +7,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto">
 
         <p className="text-gray-400 text-sm tracking-widest mb-4">
-          ABOUT
+          ABOUT ME
         </p>
 
         <h2 className="text-4xl md:text-7xl font-bold leading-tight">
