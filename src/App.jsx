@@ -18,11 +18,11 @@ function App() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <div className="bg-[#F5F1EA] dark:bg-black transition-all duration-500">
-
         <Navbar
           darkMode={darkMode}
           setDarkMode={setDarkMode}
         />
+
         <MouseGlow />
         <BackgroundGlow />
 
@@ -35,7 +35,6 @@ function App() {
         <Cert />
         <Contact />
         <Footer />
-
       </div>
     </div>
   );
