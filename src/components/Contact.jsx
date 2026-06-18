@@ -49,7 +49,7 @@ export default function Contact() {
     emailjs.send(
 
       "service_8z8zswl",
-      "template_fyb7m8m",
+      "template_51yp0yg",
       formData,
       "g-JDP1pysYW4lxf1J"
 
